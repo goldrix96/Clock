@@ -1,0 +1,70 @@
+html{
+  
+
+}
+
+.container{
+  width:1000px;
+  height: 500px;
+  background-image: url("../img/img3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aqua;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  
+}
+
+.clock-face{
+  width:20rem;
+  height: 20rem;
+  border: 20px solid white;
+  padding: 20px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+  z-index: 100;
+  
+  
+  /* transform: translateY(-3px); account for the height of the clock hands */
+}
+
+.hand{
+  width:50%;
+  height: 4px;
+  background-color: black;
+  /* border: 1px solid black; */
+  position: relative;
+  top:50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function:cubic-bezier(0, 2.31, 0.74, 1.01) ;
+  z-index: 1;
+}
+
+.hourHand{
+  width:50%;
+  height: 10px;
+}
+
+.minHand{
+  width:50%;
+  height: 5px;
+}
+
+.secHand{
+  
+    width:50%;
+    height: 1px;
+    z-index: 0;
+  
+}
+
